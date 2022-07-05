@@ -1,9 +1,8 @@
-import './kalkulator.css';
+import {KalkulatorApp} from './components/KalkulatorApp';
+import './app.css';
 
-function Kalkulator() {
+export const Kalkulator = () => {
   return (
-    <h1>TEST</h1>
+    <KalkulatorApp/>
   )
 }
-
-export default Kalkulator;

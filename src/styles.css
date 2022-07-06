@@ -1,0 +1,105 @@
+*, *::before, *::after{
+   box-sizing: border-box;
+}
+
+body{
+   background-color: #3B4664;
+   margin: 0;
+}
+
+.calc-body{
+   background-color: #3B4664;
+   width: 600px;
+   height: auto;
+   margin: 0 auto;
+   overflow: hidden;
+   margin-top: 10px;
+   border-radius: 20px;
+}
+
+.header{
+   color:white;
+   background-color: #3B4664;
+   width: 600px;
+   height: 16px;
+   font-weight: bold;
+   font-size: 20px;
+   letter-spacing: 2px;
+   padding: 20px 0px 20px 0px;
+   display: flex;  
+   align-items: center;
+   justify-content: left;
+   margin-left:20px;
+}
+
+.skjerm{
+   width:530px;
+   height: 40px;
+   font-size: 30px;
+   font-weight: bolder;
+   text-align: right;
+   padding: 35px;
+   color: white;
+   background-color: #181F32;
+   border: none;
+   border-radius: 12px;
+   outline: none;
+}
+
+.tastatur{
+   display: grid;
+   gap: 1em;
+   grid-template-columns: auto auto auto auto;
+   margin-top:20px;
+   padding:20px;
+   background-color: #242E41;
+}
+
+.knapp{
+   box-sizing: content-box;
+   display: inline-block;
+   color: #4D4F57;
+   border: none;
+   border-radius: 15px;
+   padding: 40px;
+   font-size: 20px;
+   background-color: #E9E2DB;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: bolder;
+   text-align: center;
+}
+
+.del{
+   background-color: #647299;
+   color: #E7EEF3;
+   font-weight: bolder;
+   text-align: center;
+   border-radius: 15px;
+   border: none;
+   padding: 40px;
+   font-size: 30px;
+}
+
+.reset{
+   background-color: #647299;
+   color: #E7EEF3;
+   border: none;
+   font-weight: bolder;
+   text-align: center;
+   border-radius: 15px;
+   border: none;
+   padding: 40px;
+   font-size: 30px;
+}
+   .equal{
+   color: #FFDBD4;
+   background-color: #D1402E;
+   font-weight: bolder;
+   text-align: center;
+   border-radius: 15px;
+   border: none;
+   padding: 40px;
+   font-size: 30px;
+}

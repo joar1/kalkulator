@@ -1,16 +1,13 @@
 import './styles.css'
-import React from 'react';
-
-
 
 export const Calculator = () => {
   return (
     <div className='calc-body'>
-      
+
       <div className='header'>Sommeroppgave kalkulator</div>
 
       <div className='screen'>
-        <div className='current-op'>399,981</div>
+        <div className='current-op'></div>
       </div>
 
       <div className='keypad'>

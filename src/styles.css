@@ -76,9 +76,7 @@ body{
 }
 .buttons:hover,
 .buttons:focus{
-   background-color: green;
-   color: white;
-   border:white solid 2px;
+   color: green;
 }
 
 .del{
@@ -94,7 +92,7 @@ body{
 .del:hover,
 .del:focus{
    color: red;
-   border:white solid 2px;
+   border:white solid 1px;
 }
 
 .reset{
@@ -112,7 +110,7 @@ body{
 .reset:hover,
 .reset:focus{
    color: red;
-   border:white solid 2px;
+   border:white solid 1px;
 }
 
 .equal{
@@ -129,5 +127,5 @@ body{
 .equal:hover,
 .equal:focus{
    color: white;
-   border:white solid 2px;
+   border:white solid 1px;
 }

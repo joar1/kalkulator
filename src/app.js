@@ -9,8 +9,7 @@ export const Calculator = () => {
       <div className='header'>Sommeroppgave kalkulator</div>
       {/* <input className='skjerm' placeholder='0'/> */}
       <div className='screen'>
-        <div className='prev-op'>1234</div>
-        <div className='current-op'>1234</div>
+        <div className='current-op'>399,981</div>
       </div>
 
       <div className='keypad'>

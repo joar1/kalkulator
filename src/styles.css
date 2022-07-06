@@ -35,12 +35,16 @@ body{
 .screen{
    width:600px;
    height: 40px;
-   padding: 35px;
+   padding: 50px;
    color: white;
+   font-size: 40px;
+   font-weight: bolder;
    background-color: #181F32;
    border-radius: 12px;
    display: flex;
-   justify-content: right;
+   flex-direction: column;
+   align-items: flex-end;
+   justify-content: space-around;
 }
 
 
@@ -61,13 +65,20 @@ body{
    border: none;
    border-radius: 15px;
    padding: 40px;
-   font-size: 20px;
+   font-size: 2rem;
    background-color: #E9E2DB;
    display: flex;
    justify-content: center;
    align-items: center;
    font-weight: bolder;
    text-align: center;
+   cursor:pointer;
+}
+.buttons:hover,
+.buttons:focus{
+   background-color: green;
+   color: white;
+   border:white solid 2px;
 }
 
 .del{

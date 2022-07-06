@@ -6,8 +6,9 @@ import React from 'react';
 export const Calculator = () => {
   return (
     <div className='calc-body'>
+      
       <div className='header'>Sommeroppgave kalkulator</div>
-      {/* <input className='skjerm' placeholder='0'/> */}
+
       <div className='screen'>
         <div className='current-op'>399,981</div>
       </div>

@@ -7,7 +7,7 @@ export const Calculator = () => {
       <div className='header'>Sommeroppgave kalkulator</div>
 
       <div className='screen'>
-        <div className='current-op'></div>
+        <div className='current-op'>TEST</div>
       </div>
 
       <div className='keypad'>

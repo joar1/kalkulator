@@ -1,36 +1,57 @@
+import { useReducer } from 'react'
 import './styles.css'
+import DigitButton from './components/DigitButton'
+
+export const ACTIONS = {
+  ADD_DIGIT: 'add-digit',
+  CHOOSE_OPERATION: 'choose-operation',
+  CLEAR: 'clear',
+  DELETE_DIGIT: 'delete-digit',
+  EVALUATE: 'evaluate'
+
+}
+
+function reducer(state, {type, payload}){
+  switch(type){
+    case ACTIONS.ADD_DIGIT:
+      return {
+        ...state,
+        currentOp: `${state.currentOp || ""}${payload.digit}`,
+      }
+  }
+}
 
 export const Calculator = () => {
+  const [{currentOp, previousOp, operation}, dispatch] = useReducer(reducer,{})
+
   return (
     <div className='calc-body'>
-
       <div className='header'>Sommeroppgave kalkulator</div>
-
       <div className='screen'>
-        <div className='current-op'>TEST</div>
+        <div className='prev-op'>{previousOp}{operation}TEST</div>
+        <div className='current-op'>{currentOp}</div>
       </div>
 
       <div className='keypad'>
-        <button className='buttons'>7</button>
-        <button className='buttons'>8</button>
-        <button className='buttons'>9</button>
+        <DigitButton digit="7" dispatch={dispatch} />
+        <DigitButton digit="8" dispatch={dispatch} />
+        <DigitButton digit="9" dispatch={dispatch} />
         <button className='del'>DEL</button>
-        <button className='buttons'>4</button>
-        <button className='buttons'>5</button>
-        <button className='buttons'>6</button>
-        <button className='buttons'>+</button>
-        <button className='buttons'>1</button>
-        <button className='buttons'>2</button>
-        <button className='buttons'>3</button>
-        <button className='buttons'>-</button>
-        <button className='buttons'>.</button>
-        <button className='buttons'>0</button>
-        <button className='buttons'>/</button>
-        <button className='buttons'>x</button>
+        <DigitButton digit="4" dispatch={dispatch} />
+        <DigitButton digit="5" dispatch={dispatch} />
+        <DigitButton digit="6" dispatch={dispatch} />
+        <button className='button'>+</button>
+        <DigitButton digit="1" dispatch={dispatch} />
+        <DigitButton digit="2" dispatch={dispatch} />
+        <DigitButton digit="3" dispatch={dispatch} />
+        <button className='button'>-</button>
+        <button className='button'>.</button>
+        <DigitButton digit="0" dispatch={dispatch} />
+        <button className='button'>/</button>
+        <button className='button'>x</button>
         <button className='reset'>RESET</button>
         <button className='equal'>=</button>
       </div>
-
     </div>
   )
 }
